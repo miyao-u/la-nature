@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body{
+    font-size: 18px;
+}
+.egg img{
+    width: 1000px;
+    height: 500px;
+}
+.salad_menu img,
+.meal_menu img{
+    width: 300px;
+    height: 300px;
+}
+/**/
+.ds_f{display: flex;}
+.jc_sb{justify-content: space-between;}
+.jc_sa{justify-content: space-around;}
+.jc_c{justify-content: center;}
+/**/
+nav li:nth-child(2) a{
+    color: #e0d5d9;
+}
+h2,h3,section{
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    margin-bottom: 63px;
+}
+.egg{
+    margin-bottom: 130px;
+}
+h3{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.salad_menu{
+    margin-bottom: 55px;
+}
+.salad_menu h4,
+.meal_menu h4{
+    margin-bottom: 25px;
+}
+.meal_name{
+    margin-bottom: 25px;
+}
+.meal_menu{
+    margin-bottom: 120px;
+}
+.box{
+    width: 1000px;
+    height: 580px;
+    padding-top: 20px;
+    margin-bottom: 90px;
+    background-color: #f5f5f5;
+}
+.small_box{
+    border: 3px solid #dcd1d5;
+    width: 960px;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.topping_price{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.topping{
+    font-size: 40px;
+    text-align: center;
+}
+.topping_content{
+    line-height: 2.5;
+}
+.drink_content{
+    line-height: 2.5;
+    width: 45%;
+}
+.left_drink dt{
+    width: 60%;
+}
+.right_drink dt{
+    width: 85%;
+}
+.right_drink{
+    padding-left: 30px;
+}
+dl::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+dt{
+    float: left;
+    clear: left;
+}
+.sp_topping{
+    display: none;
+}
+
+/*---------------------------------*/
+
+@media screen and (max-width: 640px){
+    .inner,.w_inner{
+        width: auto;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ds_f{
+        display: block;
+    }
+    h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    h3,.salad_menu,.meal_menu{
+        margin-bottom: 5%;
+    }
+    .egg{
+        margin-bottom: 10%;
+    }
+    .meal_menu h4,
+    .salad_menu h4,
+    .meal_name{
+        margin-bottom: 3%;
+    }
+    .egg img{
+        width: 100%;
+        height: 100%;
+    }
+    .box{
+        width: 100%;
+        height: 1000px;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+    .small_box{
+        width: 95%;
+        height: 97%;
+    }
+    .d_box{
+        width: 100%;
+        height: 1170px;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+    .d_small_box{
+        width: 95%;
+        height: 97%;
+    }
+    .sp{
+        text-align: center;
+    }
+    .sp_topping{
+        display: block;
+        text-align: center;
+        margin-bottom: 7%;
+    }
+    .topping_price{
+        margin-bottom: 5%;
+    }
+    .drink_content{
+        line-height: 2;
+        width: 100%;
+    }
+    .left_drink dt{
+        width: 100%;
+    }
+    .right_drink dt{
+        width: 100%;
+        float: none;
+    }
+    .right_drink{
+        padding-left: 0;
+    }
+    .sp_flex{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5%;
+    }
+}

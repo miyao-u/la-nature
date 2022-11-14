@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/* nav */
+nav li:nth-child(6) a {
+    color: #e0d5d9;
+}
+
+/* main */
+main form {
+    margin-bottom: 6%;
+}
+
+main .contact {
+    width: 100%;
+    max-width: 900px;
+    background-color: #f5f5f5;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 10%;
+    box-sizing: border-box;
+}
+
+main form span {
+    font-size: 14px;
+    color: orange;
+}
+
+main form dl {
+    min-height: 70px;
+    box-sizing: border-box;
+}
+
+main form #textarea_section dl {
+    min-height: 160px;
+}
+
+main form dt {
+    float: left;
+    clear: left;
+    width: 35%;
+    line-height: 1.2;
+}
+
+main form dd {
+    margin-left: 35%;
+}
+
+main form label {
+    width: 30%;
+}
+
+main form .alert {
+    color: #f00;
+    font-size: 14px;
+}
+
+main form input[type="text"],
+main form input[type="tel"],
+main form input[type="email"] {
+    height: 20px;
+    line-height: 21px;
+    width: 100%;
+}
+
+main form select {
+    width: 30%;
+    font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+}
+
+main form textarea {
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    height: 8em;
+    resize: none;
+}
+
+input{
+    padding-left: 3px;
+}
+
+.submit_width{
+    text-align: center;
+}
+.form_btn {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form_btn:hover {
+    border-color: transparent;
+}
+
+.form_btn input {
+    position: relative;
+    z-index: 2;
+    display: block;
+    padding: 10px 45px;
+    background: #63585a;
+    border-radius: 25px;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.pushdown:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #3f3a3b;
+}
+
+.pushdown:hover input {
+    background-color: #bbabad;
+    color: #f5f5f5;
+    transform: translateY(4px);
+}
+
+main form input {
+    font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+}
+
+main .telephone {
+    text-align: center;
+}
+
+main .telephone h2 {
+    font-size: 32px;
+}
+
+main .telephone p a{
+    font-size: 50px;
+    font-weight: bold;
+    color: #63585a;
+    width: 400px;
+    margin: auto;
+}
+
+main .telephone p img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+/* SPここから */
+@media screen and (max-width:640px) {
+
+    main .contact {
+        font-size: 1em;
+        padding: 5% 5%;
+    }
+
+    main form dl {
+        min-height: 60px;
+        margin-bottom: 0;
+    }
+
+    main form #emailchk_section dl,
+    main form #select_section dl {
+        min-height: 70px;
+    }
+
+    main form label {
+        width: calc(100%/3);
+        font-size: 0.9em;
+    }
+
+    main form span {
+        font-size: 0.8em;
+    }
+
+    main form select {
+        width: 101%;
+    }
+
+    main .telephone p a{
+        width: 100vw;
+    }
+
+    /* SPここまで */
+}

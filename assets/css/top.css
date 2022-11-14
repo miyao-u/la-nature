@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* nav */
+nav li:nth-child(1) a{
+    color: #e0d5d9;
+}
+
+/*--スローガン追記*/
+.slogan{
+    margin: 120px 0;
+}
+
+.slogan p{
+font-size: 24px;
+text-align: center;
+}
+
+/*SP*/
+@media screen and (max-width: 640px) {
+
+    .slogan{
+        width: 80%;
+        height: auto;
+        margin: 80px auto;
+}
+
+.slogan h2{
+    font-size: 32px;
+}
+
+}
