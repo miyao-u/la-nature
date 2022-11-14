@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT | La nature</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="icon" href="../favicon.ico">
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/contact.js"></script>
+  <!-- google fonts Kalam -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <h1>
+        <a href="../index.html"><img src="../assets/images/common/logo.png" alt="logo"></a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- sticky , hamburgerbtn -->
+  <div class="openbtn">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="g_nav">
+    <div class="w_inner">
+      <div class="sticky">
+        <ul class="ds_f">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../menu/index.html">MENU</a></li>
+          <li><a href="../news/index.html">NEWS</a></li>
+          <li><a href="../access/index.html">ACCESS</a></li>
+          <li><a href="../recruit/index.html">RECRUIT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ここまで共通 -->
+
+  <!-- contact/index.html -->
+  <main>
+    <div class="inner">
+
+      <h2>CONTACT</h2>
+      <form action="program.php" method="POST">
+        <div class="contact">
+
+          <!--radio-->
+          <div id="radio_section">
+            <dl>
+              <dt>店舗選択：<br><span>必須</span></dt>
+              <dd class="a ds_f">
+                <label><input type="radio" name="shop" value="表参道店">表参道店</label>
+                <label><input type="radio" name="shop" value="丸の内店">丸の内店</label>
+                <label><input type="radio" name="shop" value="日本橋店">日本橋店</label>
+              </dd>
+              <dd class="alert">選択してください</dd>
+            </dl>
+          </div>
+
+
+          <!--1行入力-->
+          <div id="name_section">
+            <dl>
+              <dt>お名前：<br><span>必須</span></dt>
+              <dd><input type="text" name="NAME" id="name" placeholder="大喜利次郎"></dd>
+              <dd class="alert">入力してください</dd>
+            </dl>
+          </div>
+
+          <div id="kana_section">
+            <dl>
+              <dt>フリガナ：</dt>
+              <dd><input type="text" name="KANA" id="kana" placeholder="オオギリジロー"></dd>
+            </dl>
+          </div>
+
+          <div id="tel_section">
+            <dl>
+              <dt>電話番号：<br><span>必須</span></dt>
+              <dd><input type="tel" name="TEL" id="tel" placeholder="00-0000-0000"></dd>
+              <dd class="alert">入力してください</dd>
+            </dl>
+          </div>
+
+          <div id="email_section">
+            <dl>
+              <dt>メールアドレス：<br><span>必須</span></dt>
+              <dd><input type="email" name="EMAIL" id="email" placeholder="info@example.com"></dd>
+              <dd class="alert">入力してください</dd>
+            </dl>
+          </div>
+
+          <div id="emailchk_section">
+            <dl>
+              <dt>メールアドレス(確認用)：<br><span>必須</span></dt>
+              <dd><input type="email" name="EMAIL" id="emailchk" placeholder="info@example.com"></dd>
+              <dd class="alert">入力してください</dd>
+            </dl>
+          </div>
+
+
+          <!--選択-->
+          <div id="select_section">
+            <dl>
+              <dt>お問い合わせ種別：<br><span>必須</span></dt>
+              <dd><select name="messageType">
+                  <option value="選択してください">選択してください</option>
+                  <option value="お店について">お店について</option>
+                  <option value="メニューについて">メニューについて</option>
+                  <option value="その他">その他</option>
+                </select>
+              </dd>
+              <dd class="alert">選択してください</dd>
+            </dl>
+          </div>
+
+          <!--自由入力欄-->
+          <div id="textarea_section">
+            <dl>
+              <dt>お問い合わせ内容：<br><span>必須</span></dt>
+              <dd><textarea name="message" cols="30" rows="15" placeholder="こちらに入力してください"></textarea></dd>
+              <dd class="alert">入力してください</dd>
+            </dl>
+
+            <!--送信ボタン-->
+            <div class="submit_width">
+              <p href="#" class="form_btn pushdown">
+                <input type="submit" value="送信">
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.contact　ここまで-->
+      </form>
+
+      <div class="telephone">
+        <h2>お問合せ先</h2>
+        <p><img src="../assets/images/contact/phone_off.png" alt="telephone"> <a tabindex="-1">03-5050-5050</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ここから共通 -->
+  <footer>
+    <div class="w_inner">
+      <div class="f_nav ds_f jc_sb">
+        <div class="f_logo">
+          <a href="../index.html"><img src="../assets/images/common/logo.png" alt="logo"></a>
+        </div>
+
+        <ul class="sns ds_f">
+          <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/common/instagram.png" alt="instagram"></a>
+          </li>
+          <li><a href="https://twitter.com/" target="_blank"><img src="../assets/images/common/twitter.png" alt="twitter"></a>
+          </li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/common/facebook.png" alt="facebook"></a>
+          </li>
+          <li><a href="#"><img src="../assets/images/common/totop.png" alt="totop"></a></li>
+        </ul>
+      </div>
+      <p><small>&copy;2022 cozy corp.</small></p>
+    </div>
+  </footer>
+</body>
+
+</html>
